@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     squares[i].classList.add('player-one')
                     currentPlayer = 2
                     displayCurrentPlayer.innderHTML = currentPlayer
-                } if (currentPlayer == 2) {
+                } else if (currentPlayer == 2) {
                     squares[i].classList.add('taken')
                     squares[i].classList.add('player-two')
                     currentPlayer = 1
                     displayCurrentPlayer.innerHTML = currentPlayer
-                }
-            }
+                } 
+            } else alert('cant go here')
         }
     }
 })
